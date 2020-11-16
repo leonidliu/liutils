@@ -2,3 +2,4 @@
 
 export(Mode)
 export(check_na)
+export(connect_redshift)

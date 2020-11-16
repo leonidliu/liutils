@@ -2,11 +2,11 @@
 #'
 #' Function to establish an Amazon Redshift database connection.
 #'
-#' @param dbname
-#' @param host
-#' @param port
-#' @param user
-#' @param password
+#' @param dbname database name
+#' @param host databse host
+#' @param port database host
+#' @param user database username
+#' @param password database password
 #'
 #' @references
 #' Connects to Redshift using the recommendation from
