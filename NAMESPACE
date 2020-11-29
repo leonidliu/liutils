@@ -3,3 +3,5 @@
 export(Mode)
 export(check_na)
 export(connect_redshift)
+export(snake_case)
+export(theme_custom)
