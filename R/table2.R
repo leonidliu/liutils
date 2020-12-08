@@ -3,6 +3,8 @@
 #' Equivalent of base::table(), except where useNA = "always" by default. See
 #' documentation for base::table() for more information.
 #'
+#' @param ...
+#'
 #' @export
 table2 <- function(...,
                    exclude = if (useNA == "no")

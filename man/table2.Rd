@@ -12,6 +12,9 @@ table2(
   deparse.level = 1
 )
 }
+\arguments{
+\item{...}{}
+}
 \description{
 Equivalent of base::table(), except where useNA = "always" by default. See
 documentation for base::table() for more information.
