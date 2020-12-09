@@ -3,6 +3,7 @@
 export(Mode)
 export(check_na)
 export(connect_redshift)
+export(impute)
 export(snake_case)
 export(table2)
 export(theme_custom)
