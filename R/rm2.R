@@ -5,5 +5,7 @@
 #' @export
 
 rm2 <- function() {
-  rm(list = ls())
+  ENV <- globalenv()
+  ll <- ls(envir = ENV)
+  rm(list = ll, envir = ENV)
 }
