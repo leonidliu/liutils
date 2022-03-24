@@ -22,11 +22,11 @@ connect_redshift <-
            user = Sys.getenv('REDSHIFT_CREDENTIAL_USERNAME'),
            password = Sys.getenv('REDSHIFT_CREDENTIAL_PASSWORD')) {
 
-    DBI::dbConnect(RPostgres::Postgres(),
-                   dbname = dbname,
-                   host = host,
-                   port = port,
-                   user = user,
-                   password = password)
+    connections::connection_open(RPostgres::Postgres(),
+                                 dbname = dbname,
+                                 host = host,
+                                 port = port,
+                                 user = user,
+                                 password = password)
 
   }

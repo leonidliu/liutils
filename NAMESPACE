@@ -3,6 +3,7 @@
 export(Mode)
 export(calculate_age)
 export(check_na)
+export(connect_bigquery)
 export(connect_redshift)
 export(impute)
 export(rm2)
