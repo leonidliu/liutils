@@ -14,9 +14,9 @@ connect_bigquery <-
            billing = Sys.getenv("BQ_PROJECT_ID"),
            dataset = Sys.getenv("BQ_DATASET")) {
 
-    connections::connection_open(bigrquery::bigquery(),
-                                 project = project,
-                                 billing = billing,
-                                 dataset = dataset)
+    DBI::dbConnect(bigrquery::bigquery(),
+                   project = project,
+                   billing = billing,
+                   dataset = dataset)
 
   }

@@ -1,18 +1,25 @@
 Package: liutils
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Utility Functions
+Version: 0.0.0.9001
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Leo",
+           family = "Liu",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+           email = "liu.leonid@gmail.com")
+Description: A set of utility functions that make my life programming in R easier.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.3
 Suggests: 
     testthat
+Imports: 
+    aws.s3,
+    bigrquery,
+    checkmate,
+    DBI,
+    dplyr,
+    ggplot2,
+    purrr,
+    RPostgres

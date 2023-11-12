@@ -18,7 +18,7 @@ theme_custom(
 
 \item{base_line_size}{base line size}
 
-\item{base-rect_size}{base rectangle size}
+\item{base_rect_size}{base rectangle size}
 }
 \description{
 Function containing a custom ggplot2 theme, modified from \code{theme_bw()}.

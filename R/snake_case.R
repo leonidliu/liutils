@@ -7,6 +7,7 @@
 #'
 #' @export
 snake_case <- function(input) {
+  checkmate::assert_character()
   input <- tolower(input)
   input <- gsub(" ", "_", input)
   input

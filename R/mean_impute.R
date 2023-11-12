@@ -5,4 +5,4 @@
 #' @param x a variable that may contain missing values
 #'
 #' @export
-impute <- function(x) dplyr::coalesce(x, mean(x, na.rm = T))
+mean_impute <- function(x) dplyr::coalesce(x, mean(x, na.rm = T))

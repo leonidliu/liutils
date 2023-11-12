@@ -5,13 +5,16 @@
 #' @param base_size base font size
 #' @param base_family base font family
 #' @param base_line_size base line size
-#' @param base-rect_size base rectangle size
+#' @param base_rect_size base rectangle size
 #'
 #' @export
 theme_custom <- function (base_size = 12,
                           base_family = "",
                           base_line_size = base_size / 22,
                           base_rect_size = base_size / 22) {
+
+  '%+replace%' <- ggplot2::'%+replace%' # nolint
+
   ggplot2::theme_grey(
     base_size = base_size,
     base_family = base_family,
@@ -23,7 +26,7 @@ theme_custom <- function (base_size = 12,
       panel.background = ggplot2::element_rect(fill = "white", colour = NA),
       panel.border = ggplot2::element_rect(fill = NA, colour = "grey20"),
       panel.grid = ggplot2::element_line(colour = "grey92"),
-      panel.grid.minor = ggplot2::element_line(size = rel(0.5)),
+      panel.grid.minor = ggplot2::element_line(size = ggplot2::rel(0.5)),
       strip.background = ggplot2::element_rect(fill = "grey85", colour = "grey20"),
       legend.key = ggplot2::element_rect(fill = "white", colour = NA),
       complete = TRUE

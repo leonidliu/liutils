@@ -4,16 +4,12 @@
 \alias{table2}
 \title{Cross Tabulation and Table Creation}
 \usage{
-table2(
-  ...,
-  exclude = if (useNA == "no") c(NA, NaN),
-  useNA = "always",
-  dnn = list.names(...),
-  deparse.level = 1
-)
+table2(..., useNA = "always")
 }
 \arguments{
-\item{...}{}
+\item{...}{one or more objects which can be interpreted as factors}
+
+\item{useNA}{by default set to 'always'}
 }
 \description{
 Equivalent of base::table(), except where useNA = "always" by default. See
