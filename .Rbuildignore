@@ -3,3 +3,6 @@
 ^LICENSE\.md$
 ^\.github$
 ^README\.Rmd$
+^liutils\.Rcheck$
+^liutils.*\.tar\.gz$
+^liutils.*\.tgz$
